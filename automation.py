@@ -1,11 +1,22 @@
 import pyautogui as p
 import time
 
-# waits 3 seconds
-time.sleep(3)
+width = p.size()[0]
+heigth = p.size()[1]
 
-# presses space-key 10 times once a second
-p.press("space", presses=10, interval=1.0)
+p.moveTo(10, heigth-10, 1)
+time.sleep(1)
+p.click()
+p.moveTo(width/2, heigth/2, 0.5)
+# waits 1 second
+time.sleep(1)
 
-# then presses backspace 10 times once half a second
-p.press("backspace", presses=10, interval=0.5)
+p.write("sublime")
+time.sleep(2)
+p.press("tab")
+p.press("enter")
+time.sleep(2)
+p.write("I've done it", interval=0.1)
+p.moveTo(width-10, 10, 1)
+p.click()
+p.moveTo(width/2, heigth/2, 1)
