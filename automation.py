@@ -2,9 +2,9 @@ import pyautogui as p
 import getpass
 import time
 import bs4
+import random as r
 
-bs4.BeautifulSoup
-
+print(r.randint(1, 10))
 
 time.sleep(3)
 #password = getpass.getpass(prompt="PROMPT: ")  # works only from cmd/terminal
