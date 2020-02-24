@@ -1,6 +1,9 @@
 import pyautogui as p
 import getpass
 import time
+import bs4
+
+bs4.BeautifulSoup
 
 
 time.sleep(3)
