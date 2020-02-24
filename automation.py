@@ -1,9 +1,12 @@
 import pyautogui as p
 import getpass
+import time
 
-password = getpass.getpass(prompt="PROMPT: ")  # works only from cmd/terminal
 
-print(password)
+time.sleep(3)
+#password = getpass.getpass(prompt="PROMPT: ")  # works only from cmd/terminal
+
+#print(password)
 # presses space-key 10 times once a second
 p.press("space", presses=10, interval=1.0)
 
