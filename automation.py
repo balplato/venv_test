@@ -1,17 +1,24 @@
-import pyautogui as p
-import getpass
-import time
-import bs4
 import random as r
+from tkinter import *
+
+def colorchanger():
+    window.configure(bg='#CC0000')
+def colorchanger2():
+    window.configure(bg='#002020')
+window = Tk()
+window.title("Title")
+window.geometry('700x700')
+window.configure(bg='#002020')
+mybutton = Button(width= 10, height= 10, command=colorchanger)
+
+notmybutton = Button(width= 10, height= 10, command=colorchanger2)
+
+
+mybutton.pack()
+notmybutton.pack()
+
+# run
+window.mainloop()
 
 print(r.randint(1, 10))
 
-time.sleep(3)
-#password = getpass.getpass(prompt="PROMPT: ")  # works only from cmd/terminal
-
-#print(password)
-# presses space-key 10 times once a second
-p.press("space", presses=10, interval=1.0)
-
-# then presses backspace 10 times once half a second
-p.press("backspace", presses=10, interval=0.5)
