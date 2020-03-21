@@ -20,5 +20,3 @@ notmybutton.pack()
 # run
 window.mainloop()
 
-print(r.randint(1, 10))
-
